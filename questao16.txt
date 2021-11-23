@@ -1,0 +1,43 @@
+Procure na internet mecanismos que possibilitem medir tempos de
+execução de rotinas computacionais. Geralmente, estas medidas
+são realizadas com o auxílio de funções em C que lêem a hora no
+sistema (sistemas Unix e Windows geralmente usam funções
+diferentes). Utilizando os conhecimentos que você obteve com
+sua pesquisa, meça os tempos de execução das implementações
+que você criou para os dois problemas de ordenação anteriores e
+compare os resultados obtidos.
+-------------------------------------------------------------------
+Para fazer uso da função que irá retornar o tempo de execução de
+um programa é necessário chamar a biblioteca “time.h”. Para
+chamar essa biblioteca basta pôr no cabeçalho do programa:
+#include <time.h>
+A partir dessa biblioteca, é possível fazer uso da função
+“clock”, das variáveis do tipo “clock_t”, e da macro
+“CLOCKS_PER_SEC”.
+A função “clock” retorna o tempo de execução exato do
+momento em que ela foi chamada. Para encontrar o tempo de
+execução de um programa precisamos usar ela duas vezes, uma
+para capturar o tempo inicial e outra para capturar o tempo final
+da execução.
+Se fizermos o tempo final - tempo inicial teremos o tempo de
+execução do programa em milissegundos. Dividindo esse valor
+pelo “CLOCKS_PER_SEC” teremos este valor em segundos, pois
+essa constante tem o valor de 1000000. Para obter o valor em
+milissegundos, pode-se dividir o “CLOCKS_PER_SEC” por 1000.
+Nesse contexto, a variável que irá armazenar o valor do tempo da
+função “clock” deve ser do tipo “clock_t”.
+-------------------------------------------------------------------
+Conclusão:
+Após a execução dos 3 programas com a implementação dos recursos da biblioteca time.h, o tempo de execução da função de ordenação da Questão 13 foi
+0,282 ms, o da função qsort da Questão 14 foi 0,013 ms e,
+finalmente, o tempo de execução da função de ordenação da
+Questão 15 foi 0,419 ms. Portanto, conlui-se que a função de
+ordenação que possui maior desempenho e eficiência é a função
+qsort usada no código da Questão 14, uma vez que esta foi a que
+apresentou o menor tempo de execução
+-------------------------------------------------------------------
+Referências:
+WURTHMANN, George Henrique. Medir tempo de execução em
+C. wurthmann.blogspot.com, 2015. Disponível em:
+<http://wurthmann.blogspot.com/2015/04/medir-tempo-de-execuc
+ao-em-c.html>. Acesso em: 23/11/2021.
