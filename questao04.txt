@@ -1,9 +1,0 @@
-Se i e j são variáveis inteiras e p e q ponteiros para int, quais das
-seguintes expressões de atribuição são ilegais?
-a. p = &i;
-b. *q = &j; - Ilegal
-c. p = &*&i;
-d. i = (*&)j; - Ilegal
-e. i = *&j;
-f. i = &&j; - Ilegal
-g. q = *p; - Ilegal
