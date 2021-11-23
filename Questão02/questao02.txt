@@ -1,0 +1,10 @@
+Seja o seguinte trecho de programa:
+int i=3, j=5;
+int *p, *q;
+p = &i;
+q = &j;
+Determine o valor das seguintes expressões:
+● p == &i; R.: 1
+● *p - *q; R.: -2
+● **&p; R.: 3
+● 3 - *p/(*q) + 7; R.: 9.400000
