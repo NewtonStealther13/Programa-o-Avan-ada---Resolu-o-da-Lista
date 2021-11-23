@@ -1,0 +1,14 @@
+Qual a utilidade do aprendizado do uso de ponteiro para aplicações em engenharia?
+Ponteiros são variáveis que armazenam o endereço de memória de outras variáveis. Dessa forma o ponteiro “aponta” para uma variável quando contém o endereço da mesma. Além disso, assim como existem diferentes tipos de variáveis, existem diferentes tipos de ponteiros. Ex: ponteiros para int, float, double, char, etc.
+Ponteiros são muito úteis quando uma variável tem que ser acessada em diferentes partes de um programa.
+Neste caso, o código pode ter vários ponteiros espalhados por diversas partes do programa, “apontando” para a variável que contém o dado desejado.
+Caso este dado seja alterado, não há problema algum, pois todas as partes do programa têm um ponteiro que aponta para o endereço onde reside o dado atualizado.
+Existem várias situações onde ponteiros são úteis, por exemplo:
+•	Alocação dinâmica de memória
+•	Manipulação de arrays.
+•	Para retornar mais de um valor em uma função.
+•	Referência para listas, pilhas, árvores e grafos.
+Referências: 
+Ponteiros em C. linguagemc.com, 2021. Disponível em: <http://linguagemc.com.br/ponteiros-em-c/>. Acesso em: 20/11/2021.
+Notas de aula, Professor Agostinho Brito - DCA0803 –
+Programação Avançada – Departamento de Engenharia da Computação e Automação, UFRN – 2021.2
