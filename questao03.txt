@@ -1,0 +1,3 @@
+Supondo que i ocupa o endereço 4094 na memória, os
+seguinte valores serão impressos pelo programa:
+4094 7 5 15 9
