@@ -1,6 +1,7 @@
 Determine o que será mostrado pelo seguinte programa
 (compile-o, execute-o e verifique se foram obtidas as respostas
 esperadas).
+------------------------------------------------------------------
 Input:
 #include <stdio.h>
 #include <string.h>
@@ -46,6 +47,7 @@ printf("%c \n", *p3);
 /* (h) */
 vetor[0] = 31;
 vetor[1] = 45;
+-------------------------------------------------------------------
 Output:
 20 
 29.0 
@@ -60,4 +62,5 @@ t
 31 
 45 
 45 
+------------------------------------------------------------------
 Foram obtidas todas as respostas esperadas.
