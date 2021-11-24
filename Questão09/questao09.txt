@@ -1,4 +1,5 @@
 O que fazem os seguintes programas em C?
+--------------------------
 int main(){
 int vet[] = {4,9,13};
 int i;
