@@ -1,7 +1,28 @@
-Assumindo que pulo[] é um vetor do tipo int, quais das seguintes
-expressões referenciam o valor do terceiro elemento do vetor?
-◦ *(pulo + 2);
-◦ *(pulo + 4);
-◦ pulo + 4;
-◦ pulo + 2;
-Apenas a expressão *(pulo + 2) referencia o conteúdo do terceiro elemento do vetor
+Determine o que será mostrado pelo seguinte programa
+(compile-o, execute-o e verifique se foram obtidas as respostas
+esperadas).
+--------------------------------------------------------------------------
+Input:
+int main(void){
+float vet[5] = {1.1,2.2,3.3,4.4,5.5};
+float *f;
+int i;
+f = vet;
+printf("contador/valor/valor/endereco/endereco\n");
+for(i = 0 ; i <= 4 ; i++){
+printf("i = %d\t",i);
+printf("vet[%d] = %.1f\t",i, vet[i]);
+printf("*(f + %d) = %.1f\t",i, *(f+i));
+printf("&vet[%d] = %X\t",i, &vet[i]);
+printf("(f + %d) = %X\t",i, f+i);
+printf("\n");
+} }
+-------------------------------------------------------------------------
+Output:
+i = 0 vet[0] = 1.1 *(f + 0) = 1.1 &vet[0] = 492D1450 (f + 0) =  492D1450 
+i = 1 vet[0] = 1.1 *(f + 0) = 2.2 &vet[0] = 492D1454 (f + 0) =  492D1454 
+i = 2 vet[0] = 1.1 *(f + 0) = 3.3 &vet[0] = 492D1458 (f + 0) =  492D1458 
+i = 3 vet[0] = 1.1 *(f + 0) = 4.4 &vet[0] = 492D145C (f + 0) =  492D145C 
+i = 4 vet[0] = 1.1 *(f + 0) = 5.5 &vet[0] = 492D1460 (f + 0) =  492D1460 
+-------------------------------------------------------------------------
+Foram obtidas todas as respostas esperadas.
