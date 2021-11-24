@@ -1,0 +1,10 @@
+Considerando a declaração
+int mat[4], *p, x;
+quais das seguintes expressões são válidas? Justifique.
+◦ p = mat + 1;
+◦ p = mat;
+◦ x = (*mat);
+Todas as expressões acima são válidas, pois as duas primeiras
+determinam o elemento do vetor mat para o qual o ponteiro p está
+apontando. Já a terceira expressão indica que a variável x guarda
+o conteúdo do primeiro elemento do vetor mat
